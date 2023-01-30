@@ -1,9 +1,3 @@
-function produceCard(data) {
-	console.log(data);
-	data.forEach((recipes) => {
-		cardFactory(recipes);
-	});
-}
 function cardFactory(data) {
 	const wrapper = document.querySelector(".cards-wrapper");
 	const card = document.createElement("div");
@@ -53,5 +47,3 @@ function cardFactory(data) {
 	descContainer.appendChild(eltContainer);
 	descContainer.appendChild(description);
 }
-
-produceCard(recipes);
